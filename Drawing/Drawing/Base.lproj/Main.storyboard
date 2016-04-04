@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="Hpd-Hn-mJt">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Drawing" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="ykb-kd-ZNs">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                                <animations/>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" translatesAutoresizingMaskIntoConstraints="NO" id="kr9-gy-G00">
+                                <rect key="frame" x="10" y="540" width="580" height="50"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pDE-RN-GEz">
+                                        <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                        <animations/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="50" id="g8m-2U-64A"/>
+                                            <constraint firstAttribute="height" constant="50" id="uCE-iR-VCC"/>
+                                        </constraints>
+                                        <state key="normal" image="blue"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="z8x-Xs-cKp">
+                                        <rect key="frame" x="106" y="0.0" width="50" height="50"/>
+                                        <animations/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="J2D-y1-ZTV"/>
+                                            <constraint firstAttribute="width" constant="50" id="SG8-7r-LlW"/>
+                                        </constraints>
+                                        <state key="normal" image="green"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Nhx-b6-lrO">
+                                        <rect key="frame" x="212" y="0.0" width="50" height="50"/>
+                                        <animations/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="50" id="0E9-Y4-ejW"/>
+                                            <constraint firstAttribute="height" constant="50" id="ds0-kS-ZYD"/>
+                                        </constraints>
+                                        <state key="normal" image="red"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="15J-xH-zig">
+                                        <rect key="frame" x="318" y="0.0" width="50" height="50"/>
+                                        <animations/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="PuW-fh-2Jz"/>
+                                            <constraint firstAttribute="width" constant="50" id="iP9-fh-9g1"/>
+                                        </constraints>
+                                        <state key="normal" image="yellow"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Thi-BC-HhQ">
+                                        <rect key="frame" x="424" y="0.0" width="50" height="50"/>
+                                        <animations/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="50" id="52c-wl-JNq"/>
+                                            <constraint firstAttribute="height" constant="50" id="Siq-5f-o2S"/>
+                                        </constraints>
+                                        <state key="normal" image="random"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LNC-cG-icq">
+                                        <rect key="frame" x="530" y="0.0" width="50" height="50"/>
+                                        <animations/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="50" id="MgI-rj-85v"/>
+                                            <constraint firstAttribute="height" constant="50" id="hkN-aZ-oXl"/>
+                                        </constraints>
+                                        <state key="normal" image="settings"/>
+                                        <connections>
+                                            <segue destination="TLd-MK-SNE" kind="show" id="KKA-qq-kfI"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="fRe-OG-QwD"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="ykb-kd-ZNs" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-20" id="1Jy-nE-WV1"/>
+                            <constraint firstAttribute="trailing" secondItem="kr9-gy-G00" secondAttribute="trailing" constant="10" id="Fe1-vW-WkV"/>
+                            <constraint firstItem="ykb-kd-ZNs" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" id="N7D-Yi-xSo"/>
+                            <constraint firstItem="kr9-gy-G00" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="10" id="Tau-j8-IG5"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="kr9-gy-G00" secondAttribute="bottom" constant="10" id="Z02-yA-G1e"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="ykb-kd-ZNs" secondAttribute="trailing" constant="-20" id="ZhW-a0-C78"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="ykb-kd-ZNs" secondAttribute="bottom" id="fsd-To-Op4"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="akf-6a-evw"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1117" y="387"/>
+        </scene>
+        <!--Settings-->
+        <scene sceneID="nVP-JV-HWB">
+            <objects>
+                <viewController id="TLd-MK-SNE" customClass="SettingsViewController" customModule="Drawing" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="4pu-k4-X3m"/>
+                        <viewControllerLayoutGuide type="bottom" id="1ZD-dk-dbV"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="eMQ-M6-du5">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Settings" id="PmD-Uh-Joj"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="pwH-qJ-cy2" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1851" y="387"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="ZVB-MB-1o0">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Hpd-Hn-mJt" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="WPc-W9-UsK">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <animations/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="l2H-ON-oUe"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="T9R-qX-3dC" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="305" y="387"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="blue" width="214" height="214"/>
+        <image name="green" width="214" height="214"/>
+        <image name="random" width="214" height="214"/>
+        <image name="red" width="214" height="214"/>
+        <image name="settings" width="214" height="214"/>
+        <image name="yellow" width="214" height="214"/>
+    </resources>
+</document>
