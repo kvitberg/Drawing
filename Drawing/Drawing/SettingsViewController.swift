@@ -9,7 +9,10 @@
 import UIKit
 
 class SettingsViewController: UIViewController {
-
+    
+    //Use weak to accualy "destroy" the DrawingViewController 
+    weak var drawingVC : DrawingViewController? = nil
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -22,6 +25,11 @@ class SettingsViewController: UIViewController {
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+    }
+    @IBAction func erasedTapped(sender: AnyObject) {
+        self.drawingVC?.eraseDrawing()
+        self.navigationController?.popViewControllerAnimated(true)
+        
     }
     
 

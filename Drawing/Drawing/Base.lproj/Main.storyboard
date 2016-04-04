@@ -5,10 +5,10 @@
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Drawing View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Drawing" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="DrawingViewController" customModule="Drawing" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -32,6 +32,9 @@
                                             <constraint firstAttribute="height" constant="50" id="uCE-iR-VCC"/>
                                         </constraints>
                                         <state key="normal" image="blue"/>
+                                        <connections>
+                                            <action selector="blueTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="iys-oz-ydo"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="z8x-Xs-cKp">
                                         <rect key="frame" x="106" y="0.0" width="50" height="50"/>
@@ -41,6 +44,9 @@
                                             <constraint firstAttribute="width" constant="50" id="SG8-7r-LlW"/>
                                         </constraints>
                                         <state key="normal" image="green"/>
+                                        <connections>
+                                            <action selector="greenTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="k4j-v2-zuL"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Nhx-b6-lrO">
                                         <rect key="frame" x="212" y="0.0" width="50" height="50"/>
@@ -50,6 +56,9 @@
                                             <constraint firstAttribute="height" constant="50" id="ds0-kS-ZYD"/>
                                         </constraints>
                                         <state key="normal" image="red"/>
+                                        <connections>
+                                            <action selector="redTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="1Cn-N0-cIs"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="15J-xH-zig">
                                         <rect key="frame" x="318" y="0.0" width="50" height="50"/>
@@ -59,6 +68,9 @@
                                             <constraint firstAttribute="width" constant="50" id="iP9-fh-9g1"/>
                                         </constraints>
                                         <state key="normal" image="yellow"/>
+                                        <connections>
+                                            <action selector="yellowTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Jk0-vf-l5h"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Thi-BC-HhQ">
                                         <rect key="frame" x="424" y="0.0" width="50" height="50"/>
@@ -68,6 +80,9 @@
                                             <constraint firstAttribute="height" constant="50" id="Siq-5f-o2S"/>
                                         </constraints>
                                         <state key="normal" image="random"/>
+                                        <connections>
+                                            <action selector="randomTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="48l-tI-wJd"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LNC-cG-icq">
                                         <rect key="frame" x="530" y="0.0" width="50" height="50"/>
@@ -78,7 +93,7 @@
                                         </constraints>
                                         <state key="normal" image="settings"/>
                                         <connections>
-                                            <segue destination="TLd-MK-SNE" kind="show" id="KKA-qq-kfI"/>
+                                            <segue destination="TLd-MK-SNE" kind="show" identifier="drawingToSettingsSegue" id="Fqa-Xk-cSq"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -124,7 +139,13 @@
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Settings" id="PmD-Uh-Joj"/>
+                    <navigationItem key="navigationItem" title="Settings" id="PmD-Uh-Joj">
+                        <barButtonItem key="rightBarButtonItem" title="Erase" id="nKV-Sz-Mxc">
+                            <connections>
+                                <action selector="erasedTapped:" destination="TLd-MK-SNE" id="kP1-J8-enK"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pwH-qJ-cy2" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

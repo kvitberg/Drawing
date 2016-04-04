@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		D2E9D39A1CB27CAB00DDAB18 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2E9D3991CB27CAB00DDAB18 /* AppDelegate.swift */; };
-		D2E9D39C1CB27CAB00DDAB18 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2E9D39B1CB27CAB00DDAB18 /* ViewController.swift */; };
+		D2E9D39C1CB27CAB00DDAB18 /* DrawingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2E9D39B1CB27CAB00DDAB18 /* DrawingViewController.swift */; };
 		D2E9D39F1CB27CAB00DDAB18 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D2E9D39D1CB27CAB00DDAB18 /* Main.storyboard */; };
 		D2E9D3A21CB27CAB00DDAB18 /* Drawing.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = D2E9D3A01CB27CAB00DDAB18 /* Drawing.xcdatamodeld */; };
 		D2E9D3A41CB27CAB00DDAB18 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D2E9D3A31CB27CAB00DDAB18 /* Assets.xcassets */; };
@@ -38,7 +38,7 @@
 /* Begin PBXFileReference section */
 		D2E9D3961CB27CAB00DDAB18 /* Drawing.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Drawing.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D2E9D3991CB27CAB00DDAB18 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		D2E9D39B1CB27CAB00DDAB18 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		D2E9D39B1CB27CAB00DDAB18 /* DrawingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrawingViewController.swift; sourceTree = "<group>"; };
 		D2E9D39E1CB27CAB00DDAB18 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		D2E9D3A11CB27CAB00DDAB18 /* Drawing.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Drawing.xcdatamodel; sourceTree = "<group>"; };
 		D2E9D3A31CB27CAB00DDAB18 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -102,7 +102,7 @@
 			isa = PBXGroup;
 			children = (
 				D2E9D3991CB27CAB00DDAB18 /* AppDelegate.swift */,
-				D2E9D39B1CB27CAB00DDAB18 /* ViewController.swift */,
+				D2E9D39B1CB27CAB00DDAB18 /* DrawingViewController.swift */,
 				D2E9D3CA1CB2842F00DDAB18 /* SettingsViewController.swift */,
 				D2E9D39D1CB27CAB00DDAB18 /* Main.storyboard */,
 				D2E9D3A31CB27CAB00DDAB18 /* Assets.xcassets */,
@@ -261,7 +261,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D2E9D39C1CB27CAB00DDAB18 /* ViewController.swift in Sources */,
+				D2E9D39C1CB27CAB00DDAB18 /* DrawingViewController.swift in Sources */,
 				D2E9D39A1CB27CAB00DDAB18 /* AppDelegate.swift in Sources */,
 				D2E9D3A21CB27CAB00DDAB18 /* Drawing.xcdatamodeld in Sources */,
 				D2E9D3CB1CB2842F00DDAB18 /* SettingsViewController.swift in Sources */,
