@@ -31,7 +31,7 @@
                                             <constraint firstAttribute="width" constant="50" id="g8m-2U-64A"/>
                                             <constraint firstAttribute="height" constant="50" id="uCE-iR-VCC"/>
                                         </constraints>
-                                        <state key="normal" image="blue"/>
+                                        <state key="normal" image="blue-1"/>
                                         <connections>
                                             <action selector="blueTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="iys-oz-ydo"/>
                                         </connections>
@@ -43,7 +43,7 @@
                                             <constraint firstAttribute="height" constant="50" id="J2D-y1-ZTV"/>
                                             <constraint firstAttribute="width" constant="50" id="SG8-7r-LlW"/>
                                         </constraints>
-                                        <state key="normal" image="green"/>
+                                        <state key="normal" image="green-1"/>
                                         <connections>
                                             <action selector="greenTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="k4j-v2-zuL"/>
                                         </connections>
@@ -55,7 +55,7 @@
                                             <constraint firstAttribute="width" constant="50" id="0E9-Y4-ejW"/>
                                             <constraint firstAttribute="height" constant="50" id="ds0-kS-ZYD"/>
                                         </constraints>
-                                        <state key="normal" image="red"/>
+                                        <state key="normal" image="red-1"/>
                                         <connections>
                                             <action selector="redTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="1Cn-N0-cIs"/>
                                         </connections>
@@ -67,7 +67,7 @@
                                             <constraint firstAttribute="height" constant="50" id="PuW-fh-2Jz"/>
                                             <constraint firstAttribute="width" constant="50" id="iP9-fh-9g1"/>
                                         </constraints>
-                                        <state key="normal" image="yellow"/>
+                                        <state key="normal" image="yellow-1"/>
                                         <connections>
                                             <action selector="yellowTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Jk0-vf-l5h"/>
                                         </connections>
@@ -79,7 +79,7 @@
                                             <constraint firstAttribute="width" constant="50" id="52c-wl-JNq"/>
                                             <constraint firstAttribute="height" constant="50" id="Siq-5f-o2S"/>
                                         </constraints>
-                                        <state key="normal" image="random"/>
+                                        <state key="normal" image="random-1"/>
                                         <connections>
                                             <action selector="randomTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="48l-tI-wJd"/>
                                         </connections>
@@ -91,7 +91,7 @@
                                             <constraint firstAttribute="width" constant="50" id="MgI-rj-85v"/>
                                             <constraint firstAttribute="height" constant="50" id="hkN-aZ-oXl"/>
                                         </constraints>
-                                        <state key="normal" image="settings"/>
+                                        <state key="normal" image="settings-1"/>
                                         <connections>
                                             <segue destination="TLd-MK-SNE" kind="show" identifier="drawingToSettingsSegue" id="Fqa-Xk-cSq"/>
                                         </connections>
@@ -172,11 +172,11 @@
         </scene>
     </scenes>
     <resources>
-        <image name="blue" width="214" height="214"/>
-        <image name="green" width="214" height="214"/>
-        <image name="random" width="214" height="214"/>
-        <image name="red" width="214" height="214"/>
-        <image name="settings" width="214" height="214"/>
-        <image name="yellow" width="214" height="214"/>
+        <image name="blue-1" width="159" height="119"/>
+        <image name="green-1" width="159" height="119"/>
+        <image name="random-1" width="252" height="189"/>
+        <image name="red-1" width="159" height="119"/>
+        <image name="settings-1" width="252" height="189"/>
+        <image name="yellow-1" width="159" height="119"/>
     </resources>
 </document>
